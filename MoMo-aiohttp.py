@@ -42,7 +42,7 @@ async def autoVisit(proxy, sem):
             try:
                 # 改一下这里的 URL
                 # Your url
-                async with session.get(url='http://www.baidu.com', proxy='http://' + proxy, timeout=5) as resp:
+                async with session.get(url='https://www.maimemo.com/share/page?uid=4401757&pid=2f83c11fcad57e83972ebd37fd5ca12f&tid=dd0b808e149862754c0745bfdb58b5fe', proxy='http://' + proxy, timeout=5) as resp:
                     print('[%s]' % colored(proxy, 'cyan', attrs=['bold']),
                           colored('Successfully!', 'green', attrs=['bold']))
                     ProxyList.append(proxy)
